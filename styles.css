@@ -3,15 +3,28 @@
 }
 
 
+.container {
+  background-image: url('https://images.pexels.com/photos/1353938/pexels-photo-1353938.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+  background-repeat: no-repeat;
+  position:-webkit-sticky;
+  position: sticky;
+  }
+
 #navbar {
   border-bottom: 2px solid grey;
-  background-color: rgba(119, 138, 246, .6);
+  background-color: rgba(27, 36, 85, 0.8);
+  position:-webkit-sticky;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width:100%;
+  z-index:1;
 }
 
 .profile {
   display: flex;
   justify-content: center;
-  margin: 50px;
+
 }
 
 
@@ -48,6 +61,7 @@ a {
 
 }
 #name {
+  padding-top: 100px;
   text-align: center;
   border: none;
 }
@@ -157,7 +171,6 @@ h1 {
 
 img {
   border:6px solid black;
-  min-height: 3em;
   resize: both;
   background: #ffd73e33;
  
