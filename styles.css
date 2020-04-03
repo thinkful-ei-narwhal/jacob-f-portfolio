@@ -12,13 +12,14 @@
 
 #navbar {
   border-bottom: 2px solid grey;
-  background-color: rgba(27, 36, 85, 0.8);
+  background-color: rgba(27, 36, 85, .8);
   position:-webkit-sticky;
   position: fixed;
   top: 0;
   display: flex;
   width:100%;
   z-index:1;
+  padding: 6px;
 }
 
 .profile {
