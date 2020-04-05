@@ -9,7 +9,6 @@
 #about-me-container {
   background-color: #3D3C35;
   padding:50px 50px 50px 0;
-  margin-top: 100px;
 }
 
 #navbar {
@@ -25,6 +24,7 @@
 
 #menu-button {
   color: white;
+  padding: 10px;
 }
 
 .content {
@@ -37,8 +37,9 @@
   position: sticky;
   min-width: 160px;
   z-index: 1;
-height: 5%;
-  font-size: 24px;
+  height: 5%;
+  font-size: 18px;
+  padding-top:10px;
 }
 
 
@@ -124,6 +125,7 @@ a {
 
 #quiz {
   max-width: 1500px;
+  width: 350px;
   margin: 25px;
   height: auto;
   margin-bottom: 25px;
@@ -148,7 +150,7 @@ a {
 }
 
 #name {
-  padding-top: 75px;
+  padding-top: 15px;
   text-align: center;
   border: none;
   margin-left: 10px;
@@ -188,7 +190,7 @@ h1 {
 
 
 
-/* p  {
+p  {
 
     -webkit-animation: fadein 2s; 
        -moz-animation: fadein 2s;
@@ -243,7 +245,7 @@ h1 {
 @-ms-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
-} */
+} 
 
 
 .nav-buttons {
@@ -252,11 +254,12 @@ h1 {
 
 
 
-/* @media (min-width: 600px) {
+ @media (min-width: 600px) {
 
   .nav-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   #menu-button {
@@ -264,6 +267,7 @@ h1 {
   }
 
   #navbar {
+    align-items: center;
     display: flex;
     justify-content: center;
     height: 7%;
@@ -299,7 +303,7 @@ h1 {
     margin-bottom: 100px; 
   }
   #about-me-container {
-    padding:200px 0 200px 0;
+    padding:100px 0 100px 0;
   }
 
   #about-me-div {
@@ -311,6 +315,10 @@ h1 {
   #about-body {
     font-size: 20px;
     line-height: 2.5em;
+  }
+
+  #quiz {
+    width: 450px;
   }
 
 }
@@ -337,4 +345,4 @@ h1 {
     line-height: 2.5em;
   }
 
-} */
+}
