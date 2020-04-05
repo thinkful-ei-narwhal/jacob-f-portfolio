@@ -71,6 +71,11 @@ a {
   font-size: 16px;
 }
 
+.technologies {
+  font-size: 36px;
+  padding: 10px;
+}
+
 #about-me-div {
     color: #DEFFE2;
     line-height: 2em;
@@ -85,6 +90,10 @@ a {
 
 .keep-scrolling {
   font-size: 14px;
+}
+
+.project-description {
+  padding: 10px;
 }
 
 #project-container {
