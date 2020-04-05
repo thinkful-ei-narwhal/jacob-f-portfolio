@@ -54,6 +54,14 @@ const handleViewCodeClick = function () {
 
 
 
+anime({
+  targets: '.about-me h1',
+  translateY: [-800, 0], // from 100 to 250
+  delay: 750,
+  direction: 'alternate',
+  loop: false
+});
+
 handleViewCodeClick();
 handleViewProjectClick();
 handleLinkedInClick();
@@ -61,11 +69,4 @@ handleMailClick();
 handleMenuClick();
 handleGitHubClick();
 
-  anime({
-    targets: '.about-me h1',
-    translateY: [-800, 0], // from 100 to 250
-    delay: 750,
-    direction: 'alternate',
-    loop: false
-  });
 

@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 
 
-
 #about-me-container {
   background-color: #3D3C35;
   padding:50px 50px 50px 0;
@@ -29,17 +28,17 @@
 }
 
 .content {
-  padding: 10px;
-  float: left;
+  padding: 20px;
 }
 
 .dropdown {
   color: black;
   display: none;
-  position: relative;
+  position: sticky;
   min-width: 160px;
   z-index: 1;
-  width: 5%;
+height: 5%;
+  font-size: 24px;
 }
 
 
@@ -174,7 +173,7 @@ h1 {
     justify-content: space-evenly;
 
   }
-  i {
+  .icon {
     padding:100px 30px 75px 30px;
     flex-direction: row;
     font-size: 50px;
@@ -189,7 +188,7 @@ h1 {
 
 
 
-p  {
+/* p  {
 
     -webkit-animation: fadein 2s; 
        -moz-animation: fadein 2s;
@@ -244,7 +243,7 @@ h1 {
 @-ms-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
-}
+} */
 
 
 .nav-buttons {
@@ -253,7 +252,7 @@ h1 {
 
 
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
 
   .nav-buttons {
     display: flex;
@@ -338,4 +337,4 @@ h1 {
     line-height: 2.5em;
   }
 
-}
+} */
