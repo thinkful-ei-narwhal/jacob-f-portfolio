@@ -11,14 +11,15 @@
 .container {
   position: absolute;
   top:0;
-  bottom:0;
+
   left:0;
-  right:0;
+  width:auto;
+  z-index:1;
 }
 
 #about-me-container {
-  background-color: #3D3C35;
-  padding:50px 50px 50px 0;
+  background-color: rgba(107, 179, 132, .6);
+  padding:50px 50px 50px 50px;
 }
 
 #navbar {
@@ -69,6 +70,7 @@ a {
 
 #about-body{
   font-size: 16px;
+  font-weight: 600;
 }
 
 .technologies {
@@ -77,7 +79,7 @@ a {
 }
 
 #about-me-div {
-    color: #DEFFE2;
+    color: #B36E6B;
     line-height: 2em;
     font-size: 16px;
     text-align: center;
@@ -93,11 +95,13 @@ a {
 }
 
 .project-description {
-  padding: 10px;
+  padding: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #project-container {
-  background-color: #BDB9A4;
+  background-color: rgb(179, 110, 107, .5);
   padding-top: 25px;
   padding-bottom: 50px;
   display: flex;
@@ -122,6 +126,8 @@ a {
 
 .project-header {
   margin-bottom: 75px;
+  color: rgb(107, 179, 132);
+  text-shadow: 1px 1px #662B29;
 
 }
 
@@ -156,6 +162,7 @@ a {
   display: flex;
   justify-content:center;
   margin-top: 25px;
+  margin-bottom: 50px;
   border: 1px solid #645C8A;
   width: 40%;
   padding: 5px;
@@ -171,8 +178,9 @@ a {
 #name {
   padding-top: 15px;
   text-align: center;
-  border: none;
   margin-left: 10px;
+  color: #B36E6B;
+  text-shadow: 1px 1px #662B29;
 }
 
 
@@ -197,7 +205,7 @@ h1 {
   .icon {
     padding:100px 30px 75px 30px;
     flex-direction: row;
-    font-size: 50px;
+    font-size: 30px;
   }
 
   i:hover {
@@ -310,8 +318,12 @@ h1 {
    }
 
   #about-me-container {
-    background-color: #3D3C35;
     padding: 100px;
+  }
+  .project-description {
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
    
 }
@@ -326,7 +338,6 @@ h1 {
   }
 
   #about-me-div {
-    color: #DEFFE2;
     line-height: 2.5em;
     margin: 0 200px 0 200px;
   }
@@ -338,6 +349,18 @@ h1 {
 
   #quiz {
     width: 450px;
+  }
+
+  .icon {
+    padding:100px 30px 75px 30px;
+    flex-direction: row;
+    font-size: 50px;
+  }
+
+  .project-description {
+    padding: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
 
 }
@@ -354,7 +377,6 @@ h1 {
   }
 
   #about-me-div {
-    color: #DEFFE2;
     line-height: 2.5em;
     margin: 0 150px 0 150px;
   }
@@ -362,6 +384,12 @@ h1 {
   #about-body {
     font-size: 26px;
     line-height: 2.5em;
+  }
+
+  .project-description {
+    padding: 30px;
+    margin-left: 700px;
+    margin-right: 700px;
   }
 
 }
