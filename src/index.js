@@ -32,8 +32,8 @@ const generateAboutMe = function () {
               trumpet to the synthesizer. I strive to learn and grow my abilities as an engineer and
               as a person everyday.  
       </span>
-      <button class = 'slider' type = 'button'> Projects</button>
   </div> 
+  <button class = 'slider' type = 'button'> View Projects </button>
 </div> 
   
   `;
@@ -59,7 +59,7 @@ const generateProjects = function () {
           <div class = 'view-button' id = 'view-quiz-code'> View Code</div>
           <div class = 'view-button' id = 'view-project'> View Project </div>
       </div>
-      <button class = 'slider' type = 'button'> Projects</button>
+      <button class = 'slider' type = 'button'> Home </button>
   </div>
   `;
 }
@@ -141,7 +141,7 @@ const handleViewCodeClick = function () {
 
 
 const render = function() {
-  let STORE = store.store;
+
 
   const aboutMe = `${generateAboutMe()} ${generateFooter()}`
   const projects = `${generateProjects()} ${generateFooter()}`
@@ -149,24 +149,25 @@ const render = function() {
 
   $('.container').on('click', '.slider', event => {
     console.log('test', store.store)
-      if (STORE === 0) {
+      if (store.store === 0) {
         console.log('test0', store.store)
-          STORE++;
+          
          $('.container').html('')
          $('.container').html(aboutMe)
+         store.store++;
       }
-      else if (STORE === 1) {
+      else if (store.store === 1) {
         console.log('test1', store.store)
-        STORE--;
+        
         $('.container').html('')
         $('.container').html(projects)
-        
+        store.store--;
       }
-      else {
-        console.log('testElse', store.store)
-        $('.container').html('')
-        $('.container').html(aboutMe)
-      }
+      // else {
+      //   console.log('testElse', store.store)
+      //   $('.container').html('')
+      //   $('.container').html(aboutMe)
+      // }
   })
 
 }
