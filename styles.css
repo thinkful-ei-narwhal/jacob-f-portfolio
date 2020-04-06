@@ -112,7 +112,6 @@ a {
 }
 
 .project {
-    border-bottom:1px solid grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,6 +191,13 @@ h1 {
     
   }
   
+button {
+  display: flex;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
 
   .footer {
     line-height: 1.5em;
