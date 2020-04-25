@@ -3,6 +3,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+#project-container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 
 
@@ -11,7 +16,6 @@
 .container {
   position: absolute;
   top:0;
-
   left:0;
   width:auto;
   z-index:1;
@@ -19,20 +23,9 @@
 
 #about-me-container {
   background-color: rgba(107, 179, 132, .6);
-  padding:50px 50px 50px 50px;
   display: flex;
   flex-direction: column;
 }
-
-#navbar {
-  background-color: rgba(24, 24, 26);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index:1;
-}
-
 
 
 #menu-button {
@@ -40,9 +33,6 @@
   padding: 10px;
 }
 
-.content {
-  padding: 20px;
-}
 
 .dropdown {
   color: black;
@@ -96,11 +86,6 @@ a {
   font-size: 14px;
 }
 
-/* .project-description {
-  padding: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
-} */
 
 #project-container {
   background-color: rgb(179, 110, 107, .5);
@@ -141,7 +126,7 @@ a {
 
 
 .project-description {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 2em;
   text-align: center;
   color: rgb(63, 63, 62);
@@ -149,7 +134,7 @@ a {
 
 #quiz {
   max-width: 1500px;
-  width: 350px;
+  width: 300px;
   margin: 10px;
   height: auto;
   margin-bottom: 10px;
@@ -226,8 +211,6 @@ h1 {
 
 footer {
     line-height: 1.5em;
-    /* padding: 14.5px; */
-    /* text-align: center; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -237,6 +220,7 @@ footer {
     padding:75px 30px 75px 30px;
     flex-direction: row;
     font-size: 30px;
+    color: black;
   }
 
   i:hover {
@@ -345,8 +329,9 @@ h1 {
    }
 
   #about-me-container {
-    padding: 100px;
+    padding: 50px;
   }
+
   .project-description {
     padding: 30px;
     margin-left: 100px;
@@ -361,7 +346,7 @@ h1 {
     margin-bottom: 100px; 
   }
   #about-me-container {
-    padding:100px 0 100px 0;
+    padding: 50px;
   }
 
   #about-me-div {
@@ -384,12 +369,6 @@ h1 {
     font-size: 50px;
   }
 
-  /* .project-description {
-    padding: 30px;
-    margin-left: 300px;
-    margin-right: 300px;
-  } */
-
 }
 
 @media (min-width: 1400px) {
@@ -400,7 +379,7 @@ h1 {
   }
 
   #about-me-container {
-    padding: 200px
+    padding: 40px;
   }
 
   #about-me-div {
@@ -411,12 +390,6 @@ h1 {
   #about-body {
     font-size: 26px;
     line-height: 2.5em;
-  }
-
-  .project-description {
-    /* padding: 30px;
-    margin-left: 700px;
-    margin-right: 700px; */
   }
 
 }

@@ -3,18 +3,7 @@ import $ from 'jquery';
 import store from './store'
 
 
-// const generateNavBar = function() {
-//   return `
-//   <div id = 'navbar'>
-//   <i id = 'menu-button' class="fas fa-bars"></i> 
-//   <ul id = 'nav-buttons' class = 'dropdown'> 
-//       <li class = 'content'> <a href = '#about-me-container'> About Me </a> </li>
-//       <li class = 'content'> <a href = '#project-container'> Projects </a> </li>
-//       <li class = 'content'> <a href = '#contact'> Contact Info </a> </li>
-//   <ul>
-//   </div>
-//   `;
-// }
+
 
 const generateAboutMe = function () {
   return `
@@ -63,8 +52,8 @@ const generateProjects = function () {
             <i class="fab fa-css3-alt font-awesome tech-padding" aria-label="CSS Three logo"></i>
         </div>
         <div class = 'project-buttons'> 
-            <div class = 'view-button' id = 'view-quiz-code'> View Code</div>
-            <div class = 'view-button' id = 'view-project'> View Project </div>
+           <a href = 'https://thinkful-ei-narwhal.github.io/quizz-app-ren-jacob' target = '_blank' class = 'view-button' id = 'view-quiz-code'> View Code</a>
+            <a href = 'https://github.com/thinkful-ei-narwhal/quizz-app-ren-jacob' target = '_blank' class = 'view-button' id = 'view-project'> View Project </a>
         </div>
     </div>
   </main>
@@ -78,70 +67,15 @@ const generateFooter = function () {
   <footer>
     <div class = 'footer' id = 'contact'>
       <div id = 'icons'>
-        <i class="icon fas fa-envelope" id = 'email-link'> </i> 
-        <i class="icon fab fa-github"></i> 
-        <i class="icon fab fa-linkedin"></i> 
+        <a href = 'mailto:jacobflaxman1@gmail.com' target = '_blank' > <i class="icon fas fa-envelope"> </i> </a>
+        <a href = 'https://github.com/jacobflaxman1' target = '_blank' > <i class="icon fab fa-github"></i> </a>
+        <a href = 'https://www.linkedin.com/in/jacob-flaxman-513064171' target = '_blank'> <i class="icon fab fa-linkedin"></i> </a>
       </div>
     </div>
   </footer>
   
   
   `;
-}
-
-const handleSliderClick = function () {
-
-}
-
-
-const handleMenuClick = function() {
-  $('.container').on('click', '#menu-button', event => {
-    console.log('working')
-      $('#nav-buttons').toggleClass('active')
-      $('.navbar').css('height', '50%')
-  })
-}
-
-
-const handleMailClick = function () {
-  $('.container').on('click', '.fa-envelope', event => {
-    console.log('working');
-    event.preventDefault();
-    let email = 'jacobflaxman1@gmail.com'
-    window.location = 'mailto:' + email;
-  })
-}
-
-const handleGitHubClick = function () {
-  $('.container').on('click', '.fa-github', event => {
-    console.log('working');
-    event.preventDefault();
-    window.open('https://github.com/jacobflaxman1', '_blank')
-  })
-}
-
-const handleLinkedInClick = function () {
-  $('.container').on('click', '.fa-linkedin', event => {
-    console.log('working');
-    event.preventDefault();
-    window.open('https://www.linkedin.com/in/jacob-flaxman-513064171', '_blank')
-  })
-}
-
-const handleViewProjectClick = function () {
-  $('.container').on('click', '#view-project', event => {
-    console.log('working');
-    event.preventDefault();
-    window.open('https://thinkful-ei-narwhal.github.io/quizz-app-ren-jacob/', '_blank')
-  })
-}
-
-const handleViewCodeClick = function () {
-  $('.container').on('click', '#view-quiz-code', event => {
-    console.log('working');
-    event.preventDefault();
-    window.open('https://github.com/thinkful-ei-narwhal/quizz-app-ren-jacob', '_blank')
-  })
 }
 
 
@@ -175,14 +109,4 @@ const render = function() {
 }
 
 
-
-
-
-handleViewCodeClick();
-handleViewProjectClick();
-handleLinkedInClick();
-handleMailClick();
-handleMenuClick();
-handleGitHubClick();
-handleSliderClick();
 render();
