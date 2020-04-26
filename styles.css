@@ -12,7 +12,6 @@
 
 
 
-
 .container {
   position: absolute;
   top:0;
@@ -25,6 +24,7 @@
   background-color: rgba(107, 179, 132, .6);
   display: flex;
   flex-direction: column;
+  padding-right: 10px;
 }
 
 
