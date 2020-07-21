@@ -56,7 +56,6 @@ body {
 }
 
 #header-container {
-  background-color: white;
 
   display: flex;
   flex-direction: column;
@@ -64,7 +63,7 @@ body {
   align-items: center;
   padding-right: 10px;
   border-radius: 6px;
-  margin-bottom: 500px;
+  margin-bottom: 100px;
 }
 
 
