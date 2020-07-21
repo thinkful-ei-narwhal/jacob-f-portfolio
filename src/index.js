@@ -3,16 +3,12 @@ import $ from "jquery";
 import store from "./store";
 
 const generateNavBar = () => {
-  return `
-  <div id = 'logo-container'> 
-    <div class = 'navLinks' id = 'logo' > JF </div>
-  </div>
-  
-    <nav class = 'nav-container'>
-        <a class = 'navLinks' href = '#about-me-container'> About</a>
-        <a class = 'navLinks' href = '#project-container'> Work  </a>
-    </nav>
-  `;
+  // return `
+  //   <nav class = 'nav-container'>
+  //       <a class = 'navLinks' href = '#about-me-container'> About</a>
+  //       <a class = 'navLinks' href = '#project-container'> Work  </a>
+  //   </nav>
+  // `;
 };
 
 const generateHeader = function () {
@@ -21,11 +17,17 @@ const generateHeader = function () {
       <header>
         <h1 id = 'name'>Jacob Flaxman</h1>
       </header>
+      <div class = 'footer' id = 'contact'>
+      <div id = 'icons'>
+        <a href = 'mailto:jacobflaxman1@gmail.com' target = '_blank' > <i class="icon fas fa-envelope aria-hidden = 'false' "> </i> </a>
+        <a href = 'https://github.com/jacobflaxman1' target = '_blank' > <i class="icon fab fa-github"></i> </a>
+        <a href = 'https://www.linkedin.com/in/jacob-flaxman-513064171' target = '_blank'> <i class="icon fab fa-linkedin"></i> </a>
+      </div>
+    </div>
       <div id = 'about-me-div'>
           <p class = 'landing-text' >  Full Stack Developer, <br /> Engineer, <br /> And Change Maker </p>
       </div> 
     </div> 
-  
   `;
 };
 
@@ -59,7 +61,6 @@ const generateProjects = function () {
   return `
   <main>
   <h2 class = 'mywork' > My Work </h2>
-
     <div id = 'project-container'> 
         <div class = 'project' id = 'project-one'>
             <h3 class = 'project-header'>Project Blackburn </h3>
@@ -126,24 +127,10 @@ const generateProjects = function () {
   `;
 };
 
-const generateFooter = function () {
-  return `
-  <footer>
-    <div class = 'footer' id = 'contact'>
-      <div id = 'icons'>
-        <a href = 'mailto:jacobflaxman1@gmail.com' target = '_blank' > <i class="icon fas fa-envelope aria-hidden = 'false' "> </i> </a>
-        <a href = 'https://github.com/jacobflaxman1' target = '_blank' > <i class="icon fab fa-github"></i> </a>
-        <a href = 'https://www.linkedin.com/in/jacob-flaxman-513064171' target = '_blank'> <i class="icon fab fa-linkedin"></i> </a>
-      </div>
-    </div>
-  </footer>
-  
-  `;
-};
+
 
 const render = function () {
-  const aboutMe = `${generateAboutMe()} ${generateFooter()}`;
-  const renderHTML = `${generateNavBar()} ${generateHeader()} ${generateAboutMe()}  ${generateProjects()} ${generateFooter()} `;
+  const renderHTML = `${generateHeader()} ${generateAboutMe()}  ${generateProjects()} `;
   $(".container").append(renderHTML);
 };
 
