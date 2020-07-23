@@ -90,7 +90,7 @@ const generateProjects = function () {
               In order to help people better organize their parties,
               I created Potluck. A social media platform that allows users
               to create events and invite people. The key feature is the ability
-              to track whose brining what! 
+              to track whose bringing what! 
           </p>
           <div class = 'technologies'>
               <i class="fab fa-html5 font-awesome tech-padding"></i>
@@ -108,7 +108,7 @@ const generateProjects = function () {
         <img id = 'quiz' src = 'https://i.imgur.com/M4qZgMF.png' alt = 'quiz screenshot'>
         <p class = 'project-description'>
            This project was created to help people learn a language faster.
-           It utilizes algorithm to only test you on words you struggle with. 
+           It utilizes an algorithm to test you on words you struggle with. 
            This algorithm tracks the users data as they guess words and helps them learn faster and more efficiently.
         </p>
         <div class = 'technologies'>
